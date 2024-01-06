@@ -17,4 +17,6 @@ spec:
       containers:
       - name: duckdb
         image: elimayost/nyc:latest
+        command: ["sleep"]
+        args: ["infinity"]
 
