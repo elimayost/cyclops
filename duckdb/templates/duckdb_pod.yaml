@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: duckdb
+  namespace: default
+spec:
+  containers:
+  - name: duckdb
+    image: elimayost/nyc:latest
+    command: ["sleep"]
+    args: ["infinity"] 
