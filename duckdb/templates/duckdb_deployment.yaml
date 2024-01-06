@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: duckdb-deployment
+  labels:
+    app: duckdb
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: duckdb
+  template:
+    metadata:
+      labels:
+        app: duckdb
+    spec:
+      containers:
+      - name: duckdb
+        image: elimayost/nyc:latest
+
