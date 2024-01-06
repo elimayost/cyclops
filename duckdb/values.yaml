@@ -1,0 +1,5 @@
+image: elimayost/nyc:latest
+name: duckdb
+replicas: 1
+service: false
+version: 0.0.1
